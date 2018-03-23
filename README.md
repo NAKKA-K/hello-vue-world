@@ -1,8 +1,8 @@
 # hello-vue-world
 
-> A Vue.js project
-> This repository is "Hello, world!!" in Vue.js
-> I practice the Vue.js
+> A Vue.js project  
+> This repository is "Hello, world!!" in Vue.js  
+> I practice the Vue.js  
 
 ## Build Setup
 
