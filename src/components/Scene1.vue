@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <h1 class="page-title">{{ page }}</h1>
     <h1>{{ msg }}</h1>
 
     <ul class="router">
@@ -7,7 +8,7 @@
         <router-link to="/scene2">Go to Scene2!</router-link>
       </li>
       <li>
-        <router-link to="/scene2">Go to Scene3!</router-link>
+        <router-link to="/scene3">Go to Scene3!</router-link>
       </li>
     </ul>
 
@@ -104,6 +105,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
+      page: 'Vue Scene 1',
       msg: 'Hello, Vue world!!'
     }
   }
@@ -116,9 +118,15 @@ h1, h2 {
   font-weight: normal;
 }
 
+.page-title {
+  font-size: 3rem;
+  font-family: serif;
+  text-shadow: 5px 1px 3px #CCC;
+  margin: 0;
+}
+
 .vue-links {
   margin: 40px;
-  background-color: silver;
   padding: 10px;
 
   ul {
