@@ -31,7 +31,7 @@ export default {
 <style lang="scss">
 body {
   margin: 0;
-  background-color: #DDD;
+  //background-color: #DDD;
 }
 
 #app {
@@ -44,21 +44,19 @@ body {
 }
 
 .header {
-  height: 180px;
-  margin-bottom: 20px;
-  background-color: white;
-  border-bottom: 1px solid #555;
+  height: 120px;
+  background-color: #EEE;
+  border-bottom: 8px solid #CCC;
   .img {
     float: left;
-    width: 10%;
-    padding: 20px 40px;
+    width: 6%;
+    padding: 10px 30px;
   }
   .title {
     float: left;
-    background-color: #DDD;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 5px;
-    margin-top: 50px;
+    margin-top: 20px;
     font-family: serif;
     span {
       font-size: 2.5rem;
@@ -72,8 +70,8 @@ body {
   height: 120px;
   width: 100vw;
   bottom: 0;
-  background-color: white;
-  border-top: 1px solid #555;
+  background-color: #EEE;
+  border-top: 8px solid #CCC;
   .footer-logo {
     position: absolute;
     left: 0;
