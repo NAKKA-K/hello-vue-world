@@ -11,7 +11,7 @@
     </div>
 
     <div class="footer">
-      <h2>Hello WORLD!</h2>
+      <div class="footer-logo">Hello WORLD!</div>
       <ul>
         <li><a href="" target="_blank">TOP</a></li>
         <li><a href="" target="_blank">Document</a></li>
@@ -40,37 +40,56 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .header {
-  position: relative;
+  height: 180px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-bottom: 1px solid #555;
   .img {
-    position: absolute;
     float: left;
-    width: 15%;
-    left: 20%;
+    width: 10%;
+    padding: 20px 40px;
   }
   .title {
     float: left;
-    position: absolute;
+    background-color: #DDD;
     font-size: 2rem;
+    padding: 5px;
+    margin-top: 50px;
+    font-family: serif;
     span {
-      for-size: 2.5rem;
+      font-size: 2.5rem;
       text-shadow: 1px 1px 3px #000;
     }
   }
-  float: none;
 }
 
 .footer {
+  position: absolute;
+  height: 120px;
+  width: 100vw;
+  bottom: 0;
+  background-color: white;
+  border-top: 1px solid #555;
+  .footer-logo {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 20px 40px;
+    color: #43b983;
+    text-shadow: 1px 1px 3px #000;
+  }
   ul {
+    float: right;
+    display: inline-block;
     list-style-type: none;
-    padding: 0;
-    margin: 10px;
   }
   li {
-    display: inline-block;
+    padding: 5px 10px;
   }
   a {
     color: #43b983;
