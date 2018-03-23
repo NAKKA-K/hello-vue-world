@@ -12,7 +12,6 @@
       </li>
     </ul>
 
-
     <!-- vue links -->
     <div class="vue-links">
         <h2>Essential Links</h2>
