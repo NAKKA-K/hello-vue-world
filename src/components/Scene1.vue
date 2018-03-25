@@ -1,7 +1,12 @@
 <template>
   <div class="hello">
     <h1 class="page-title">{{ page }}</h1>
-    <h1>{{ msg }}</h1>
+    <h1 v-if="msg.length > 0">
+      {{ msg }}
+    </h1>
+    <h1 v-else>
+      [! No Text]
+    </h1>
     <input type="text" v-model="msg">
 
     <ul class="router">
