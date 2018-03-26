@@ -8,6 +8,7 @@
       [! No Text]
     </h1>
     <input type="text" v-model="msg">
+    <button @click="clear()">Clear</button>
 
     <ul class="router">
       <li>
@@ -112,6 +113,11 @@ export default {
     return {
       page: 'Vue Scene 1',
       msg: 'Hello, Vue world!!'
+    }
+  },
+  methods: {
+    clear () {
+      this.msg = ''
     }
   }
 }
