@@ -119,6 +119,14 @@ export default {
     clear () {
       this.msg = ''
     }
+  },
+  ready () {
+    let that = this
+    $.getJSON('http://www.geonames.org/postalCodeLookupJSON?postalcode=10504&country=US&callback=?', {}, function (json) {
+      console.log(json)
+      that.msg = json.postalcodes[0].adminName1
+    })
+    console.log('GET!')
   }
 }
 </script>
